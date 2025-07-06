@@ -100,7 +100,7 @@ local ThemeManager = {} do
         self:BuildFolderTree()
     end
 
-    ThemeManager:SetFontTo(Font) 
+    function ThemeManager:SetFontTo(Font)
         self.Library:SetFont(Enum.Font[Font])
     end
 
