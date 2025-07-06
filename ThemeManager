@@ -99,7 +99,12 @@ local ThemeManager = {} do
         self.Folder = folder
         self:BuildFolderTree()
     end
-    
+
+    ThemeManager:SetFontTo(Font) 
+        self.Library:SetFont(Enum.Font[Font])
+    end
+
+
     --// Apply, Update theme \\--
     function ThemeManager:ApplyTheme(theme)
         local customThemeData = self:GetCustomTheme(theme)
